@@ -3,8 +3,8 @@
 ![image](https://github.com/allan-pg/Data-Cleaning-in-python/assets/62595869/b391f978-a6df-482a-abe5-75635b58aab9)
 
 ## Table of Contents:-
-1.0 Introduction  br /
-1.1 Signs of dirty data  br /
+1.0 Introduction  
+1.1 Signs of dirty data  
 1.2 Python data cleaning - prerequisites  br /
 1.3 Import python  libraries  br /
 1.4 Import necessary csv file in pandas  br /
