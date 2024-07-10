@@ -2,6 +2,24 @@
 
 ![image](https://github.com/allan-pg/Data-Cleaning-in-python/assets/62595869/b391f978-a6df-482a-abe5-75635b58aab9)
 
+## Table of Contents:-
+1.0 Introduction
+1.1 Signs of dirty data 
+1.2 Python data cleaning - prerequisites
+1.3 Import python  libraries
+1.4 Import necessary csv file in pandas
+1.5 check how many columns and rows are in your csv file
+1.6 check column names in your data
+1.7 Rename columns
+1.8 check for null values
+1.9 check for duplicates
+2.0 drop duplicates
+2.1 drop unnecessary columns
+2.2 Check column datatypes
+2.3 Reorder the column labels
+2.4 Reset Index values
+Conclusion
+
 ## 1. Introduction
 Data cleaning means fixing bad data in your data set.
 
@@ -54,7 +72,7 @@ df.shape
 ```
 df.columns
 ```
-## 1.7 Rename you columns to a more readable format
+## 1.7 Rename columns to a more readable format
 - df.head() shows the first five columns
 ```
 df = df.rename(columns = {'Mat' : 'Match_played', 
@@ -84,6 +102,12 @@ df[df['Balls_faced'].isna() == 1]
 ```
 df['Balls_faced'] = df['Balls_faced'].fillna(0)
 ```
+### fill nan values with statistical values 
+```
+df[‘col_name’].replace(to_replace = NaN, value = median, inplace = True)
+
+df['col_name'].fillna(value = median, inplace = True )
+```
 
 ## 1.9 check for duplicates in your data frame
 ```
@@ -108,7 +132,22 @@ df.dtypes()
 ```
 df['Highest_inns_score'] = df['Highest_inns_score'].astype('int')
 ```
-#### covert multiple rows to a specific datatype
+#### covert multiple columns to a specific datatype
 ```
 df = df.astype({'start_year' : 'int', 'end_year' : 'int'})
 ```
+
+## 2.3 Reorder the column labels
+```
+df = df[['fname','lname','age','sex','section','height(cm)','weight(kg)','spend_A','spend_B','spend_C']]
+```
+## 2.4  Reset Index values for the rows (Optional)
+- As our final step, we reset the index values for rows of the dataset.
+```
+df = df.reset_index(drop=True)
+```
+
+## Conclusion
+Now, when we look at our data, we can see that there are no missing or negative values. 
+Data cleaning is a crucial step in the data preprocessing pipeline.
+It involves identifying and rectifying issues in your dataset to ensure that it’s ready for analysis.
