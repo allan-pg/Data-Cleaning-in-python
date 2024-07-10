@@ -3,21 +3,21 @@
 ![image](https://github.com/allan-pg/Data-Cleaning-in-python/assets/62595869/b391f978-a6df-482a-abe5-75635b58aab9)
 
 ## Table of Contents:-
-1.0 Introduction
-1.1 Signs of dirty data 
-1.2 Python data cleaning - prerequisites
-1.3 Import python  libraries
-1.4 Import necessary csv file in pandas
-1.5 check how many columns and rows are in your csv file
-1.6 check column names in your data
-1.7 Rename columns
-1.8 check for null values
-1.9 check for duplicates
-2.0 drop duplicates
-2.1 drop unnecessary columns
-2.2 Check column datatypes
-2.3 Reorder the column labels
-2.4 Reset Index values
+1.0 Introduction  br /
+1.1 Signs of dirty data  br /
+1.2 Python data cleaning - prerequisites  br /
+1.3 Import python  libraries  br /
+1.4 Import necessary csv file in pandas  br /
+1.5 check how many columns and rows are in your csv file  br /
+1.6 check column names in your data  br /
+1.7 Rename columns  br /
+1.8 check for null values  br /
+1.9 check for duplicates  br /
+2.0 drop duplicates  br /
+2.1 drop unnecessary columns  br /
+2.2 Check column datatypes  br /
+2.3 Reorder the column labels  br /
+2.4 Reset Index values  br /
 Conclusion
 
 ## 1. Introduction
