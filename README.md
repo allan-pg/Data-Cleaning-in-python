@@ -28,7 +28,7 @@ Bad data could be:
 - Empty cells
 - Data in wrong format
 - Wrong data
-- Duplicates
+- Duplicates  
 The cricket data used in this project can be found on https://www.espncricinfo.com/records/highest-career-batting-average-282910
 
 ## 1.1 Signs of dirty data 
